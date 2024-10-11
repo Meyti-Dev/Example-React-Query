@@ -1,0 +1,28 @@
+/* tailwind dependencies */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base style */
+@layer base {
+  html {
+    box-sizing: border-box;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+  }
+  body {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url("/images/picture-3.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
