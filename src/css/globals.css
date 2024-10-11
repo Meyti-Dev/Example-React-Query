@@ -17,12 +17,25 @@
   }
   body {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url("/images/picture-3.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+/* layer utilities */
+@layer utilities {
+  .word-spacing-2 {
+    word-spacing: -2px;
+  }
+  .word-spacing-3 {
+    word-spacing: -3px;
+  }
+  .word-spacing-4 {
+    word-spacing: -4px;
   }
 }
