@@ -3,6 +3,7 @@ import "../css/globals.css";
 import localFont from "next/font/local";
 import ProviderQuery from "./ProviderQuery";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import Header from "./_components/header";
 
 // fonts
 const vazir_regular = localFont({
@@ -26,10 +27,18 @@ export default function RootLayout({ children }) {
             <body
                 className={`${vazir_regular.className} ${vazir_medium.variable}`}
             >
-                <ProviderQuery>
-                    {children}
-                    <ReactQueryDevtools />
-                </ProviderQuery>
+                <Header />
+                <main>
+                    <ProviderQuery>
+                        {children}
+                        <ReactQueryDevtools />
+                    </ProviderQuery>
+                </main>
+                <footer className="bg-gray-800 py-5 border-t border-b-0 border-r-0 border-l-0 border-solid border-white/5">
+                    <p className="text-green-500 word-spacing-2 text-center">
+                        ساخته شده توسط مهدی رمضانی
+                    </p>
+                </footer>
             </body>
         </html>
     );
